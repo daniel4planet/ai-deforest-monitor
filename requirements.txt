@@ -1,3 +1,6 @@
 earthengine-api
 geemap
 jupyter
+geopandas
+matplotlib
+folium
