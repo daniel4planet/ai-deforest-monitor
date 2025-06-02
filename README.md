@@ -1,58 +1,48 @@
-# 🌍 AI for Deforestation Monitoring
+# 🌿 NDVI Monitoring in Fiordland National Park
 
-Este proyecto usa algoritmos de inteligencia artificial para detectar y monitorear zonas de deforestación a partir de imágenes satelitales. El objetivo es ofrecer una herramienta accesible que contribuya a la protección de ecosistemas naturales.
+This is a personal-applied project to monitor vegetation changes in Fiordland National Park, New Zealand, using NDVI analysis based on satellite imagery and Google Earth Engine (GEE).
 
-## 📌 Objetivos
+## 🎯 Objective
 
-- Detectar áreas afectadas por deforestación utilizando imágenes satelitales.
-- Aplicar técnicas de procesamiento de imágenes y aprendizaje automático.
-- Crear visualizaciones que ayuden a interpretar los resultados.
+Compare vegetation cover between the years 2013 and 2023 to assess ecosystem health using satellite data (Landsat 8) and Python-based geospatial tools.
 
-## 🧠 Tecnologías utilizadas
+## 📍 Location
 
-- Python 🐍
+Fiordland National Park (Milford Sound area), New Zealand  
+Approximate bounding box: 166.2°E - 167.6°E and -46.4°S - -44.7°S
+
+## 🛠 Tools Used
+
+- Google Earth Engine (JavaScript API and Python API)
+- Python + `geemap`, `earthengine-api`
 - Jupyter Notebooks
-- Scikit-learn / TensorFlow / PyTorch (según el modelo)
-- OpenCV / PIL
-- Pandas / NumPy / Matplotlib
-- GitHub para control de versiones y documentación
+- Interactive map visualization
 
-## 🗂 Estructura del proyecto
+## 🔍 Expected Outputs
 
-ai-deforestation-monitor/
-├── data/ # Datos crudos o preprocesados
-├── notebooks/ # Notebooks Jupyter con los análisis
-├── models/ # Modelos entrenados o configuraciones
-├── results/ # Resultados, visualizaciones y métricas
-├── requirements.txt # Librerías necesarias
-└── README.md # Este archivo
+- NDVI map for 2013 and 2023
+- Difference map (vegetation loss/gain)
+- A foundation for future ecological monitoring or conservation applications
+
+## 📁 Repository Structure
+´´
+notebooks/ # Main Jupyter notebook for NDVI analysis
+src/ # (Optional) Modular functions or utilities
+data/ # Local or exported data if used
+docs/ # Map outputs, figures, images
+´´
 
 
-## 🚀 Cómo empezar
+## ▶️ How to Run
 
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/daniel4planet/ai-deforestation-monitor.git
-   cd ai-deforestation-monitor
-   ´´´
+1. Install the required dependencies:
 
-2. Instala las dependencias:
-   pip install -r requirements.txt
+pip install -r requirements.txt
 
-3. Abre los notebooks para explorar el proyecto:
+2. Open the notebook:
 
-   jupyter notebook
+jupyter notebook notebooks/Fiordland_NDVI_Project.ipynb
 
-📈 Resultados esperados
-Mapa visual de áreas afectadas
+3. Authenticate with Earth Engine and execute the notebook.
 
-Curvas de precisión, recall y matriz de confusión
-
-Comparación de modelos entrenados
-
-📄 Licencia
-Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
-
-✉️ Contacto: daniel4planet@gmail.com
-🔗 Más proyectos en: github.com/daniel4planet
-
+4. (Optional) Export maps to Google Drive.
