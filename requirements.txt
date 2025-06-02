@@ -1,1 +1,3 @@
-
+earthengine-api
+geemap
+jupyter
