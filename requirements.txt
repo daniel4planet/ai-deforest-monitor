@@ -4,3 +4,4 @@ jupyter
 geopandas
 matplotlib
 folium
+pandas
